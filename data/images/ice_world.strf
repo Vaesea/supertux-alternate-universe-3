@@ -96,22 +96,6 @@
 		246 247 248 474
   )
 )
-(tiles
-	(width 3)(height 9)
-	(images "worldmap/deprecated/ice/icecave.png")
-	(ids
-		149 150 151
-		152 153 154
-		155 156 157
-		158 159 162
-		160 161 163
-		164 165 166
-		167 168 169
-		198 199 200
-		201 202 203
-	)
-	(deprecated #t)
-)
 
 (tiles
 	(width 5)(height 12)
@@ -514,18 +498,6 @@
 		531 532 535 0
 		533 534 0   0
 	)
-)
-(tiles
-  (width 6)
-  (height 4)
-  (ids
-   0   0   477 0   0 0
-   0   0   481 0   0 0
-   483 0   0   484 0 0
-   0   0   487 0   0 0
-  )
-  (image "worldmap/deprecated/halloween/tiles.png")
-  (deprecated #t)
 )
 
 (tiles

@@ -34,12 +34,6 @@
     (class "jumpy")
     (icon "images/creatures/jumpy/snow_down-0.png"))
   (object
-    (class "mriceblock")
-    (icon "images/creatures/iceblock/iceblock-1.png"))
-  (object
-    (class "smartblock")
-    (icon "images/creatures/iceblock/smartblock-1.png"))
-  (object
     (class "crystallo")
     (icon "images/creatures/crystallo/left-2.png"))
   (object
@@ -91,24 +85,15 @@
     (class "owl")
     (icon "images/creatures/owl/carry-0.png"))
   (object
-    (class "mole")
-    (icon "images/creatures/mole/center.png"))
-  (object
     (class "zeekling")
     (icon "images/creatures/zeekling/zeekling-0.png"))
   (object
     (class "corrupted_granito")
     (icon "images/creatures/granito/corrupted/idle_left-0.png"))
   (object
-    (class "corrupted_granito_big")
-    (icon "images/creatures/granito/corrupted/big/rock_mine-0.png"))
-  (object
     (class "darttrap")
     (icon "images/creatures/darttrap/granito/empty_left.png"))
-(object
-    (class "root_sapling")
-    (icon "images/creatures/mole/corrupted/root_sapling-0.png"))  
-(object
+  (object
     (class "ghoul")
     (icon "images/creatures/ghoul/g1.png"))
   (object
@@ -159,28 +144,11 @@
  )
 
  (objectgroup
-  (name (_"Bosses"))
-  (worldmap #f)
-  (object
-    (class "yeti")
-    (icon "images/creatures/yeti/hudlife.png"))
-  (object
-    (class "ghosttree")
-    (icon "images/creatures/ghosttree/ghosttree.png"))
- )
-
- (objectgroup
   (name (_"Projectiles"))
   (worldmap #f)
   (object
-    (class "yeti_stalactite")
-    (icon "images/engine/editor/stalactite_ice_yeti.png"))
-  (object
     (class "dart")
     (icon "images/creatures/darttrap/granito/root_dart_left.png"))
-  (object
-    (class "bigsnowball")
-    (icon "images/objects/big_snowball/big_snowball.png"))
  )
 
  (objectgroup
@@ -216,15 +184,6 @@
   (object
     (class "firefly")
     (icon "images/engine/editor/resetpoint.png"))
-  (object
-    (class "granito")
-    (icon "images/creatures/granito/granito_stand-0.png"))
-  (object
-    (class "granito_big")
-    (icon "images/creatures/granito/big/granito_stand-0.png"))
-  (object
-    (class "granito_giant")
-    (icon "images/creatures/granito/giant/granito_sleep-0.png"))
   (object
     (class "dispenser")
     (icon "images/creatures/dispenser/dropper.png"))
