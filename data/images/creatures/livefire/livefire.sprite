@@ -47,17 +47,4 @@
   (fps 7)
   (hitbox 20 18 40 40)
   (mirror-action "waking-left"))
- (action
-  (name "extinguish-left")
-  (fps 14)
-  (hitbox 4 18 40 40)
-  (images "d1.png"
-		  "d2.png"
-		  "d3.png"
-		  "d4.png"))
- (action
-  (name "extinguish-right")
-  (fps 14)
-  (hitbox 20 18 40 40)
-  (mirror-action "extinguish-left"))
 )

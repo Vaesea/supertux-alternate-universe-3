@@ -58,21 +58,6 @@
   (mirror-action "left-up"))
 
  (action
-  (name "melting-left")
-  (fps 20)
-  (hitbox 8 10 32 32)
-  (images "melting-0.png"
-          "melting-1.png"
-          "melting-2.png"
-          "melting-3.png"))
-
- (action
-  (name "melting-right")
-  (fps 20)
-  (hitbox 8 10 32 32)
-  (mirror-action "melting-left"))
-
- (action
     (name "squished-left")
     (hitbox 8 13 32 32)
     (images "../snowball/snowball-squished.png"))

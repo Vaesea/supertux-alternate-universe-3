@@ -29,24 +29,6 @@
   (mirror-action "iced-left"))
 
  (action
-  (name "inside-melting-left")
-  (hitbox 8 13 32 32)
-  (fps 24.0)
-  (loops 1)
-  (images "spiky_gear-0.png"
-		  "spiky_gear-1.png"
-		  "spiky_gear-2.png"
-		  "spiky_gear-3.png"
-		  "spiky_gear-4.png"))
-
- (action
-  (name "inside-melting-right")
-  (fps 24.0)
-  (loops 1)
-  (hitbox 8 13 32 32)
-  (mirror-action "inside-melting-left"))
-
- (action
   (name "gear-left")
   (hitbox 8 13 32 32)
   (images "spiky_gear-4.png"))
