@@ -2,5 +2,5 @@
   (title (_ "Misc"))
   (description (_ "How did you get here?"))
   (levelset #t)
-  (hide-from-contribs #t)
+  (hide-from-contribs #f)
 )
