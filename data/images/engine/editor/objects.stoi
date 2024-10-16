@@ -108,6 +108,11 @@
   (object
     (class "walking_candle")
     (icon "images/creatures/mr_candle/mrcandle-editor.png"))
+ )
+
+  (objectgroup
+  (name ( _"Specifically ONLY Desert Enemies"))
+  (worldmap #f)
   (object
     (class "livefire")
     (icon "images/creatures/livefire/f2.png"))
@@ -126,6 +131,9 @@
   (object
     (class "totem")
     (icon "images/creatures/totem/walking1.png"))
+  (object
+    (class "tumbleweed")
+    (icon "images/creatures/tumbleweed/tumbleweed0.png"))
  )
 
  (objectgroup
