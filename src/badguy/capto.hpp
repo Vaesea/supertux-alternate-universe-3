@@ -1,6 +1,8 @@
 //  SuperTux - Boss "Yeti"
+//  SuperTux Alternate Universe - Boss "Capto"
 //  Copyright (C) 2005 Matthias Braun <matze@braunis.de>
 //  Copyright (C) 2006 Christoph Sommer <christoph.sommer@2006.expires.deltadevelopment.de>
+//  Copyright (C) 2024 Sophie Ball <sophieballvaesea@proton.me>
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -15,8 +17,8 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#ifndef HEADER_SUPERTUX_BADGUY_YETI_HPP
-#define HEADER_SUPERTUX_BADGUY_YETI_HPP
+#ifndef HEADER_SUPERTUX_BADGUY_CAPTO_HPP
+#define HEADER_SUPERTUX_BADGUY_CAPTO_HPP
 
 #include "badguy/boss.hpp"
 
@@ -62,7 +64,7 @@ private:
   void recalculate_pos();
 
 private:
-  enum YetiState {
+  enum CaptoState {
     RUN,
     JUMP_UP,
     THROW,
@@ -74,7 +76,7 @@ private:
   };
 
 private:
-  YetiState m_state;
+  CaptoState m_state;
   Timer m_state_timer;
   Timer m_safe_timer;
   int m_stomp_count;

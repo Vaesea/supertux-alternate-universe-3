@@ -49,7 +49,7 @@ const float BALL_WAIT = 2;
 const float STOMP_WAIT = 0.2; /**< Time we stay on the dais before jumping again. */
 const float SAFE_TIME = 1; /**< The time we are safe when Tux just hit us. */
 
-const float YETI_SQUISH_TIME = 3;
+const float CAPTO_SQUISH_TIME = 3;
 
 const float SNOW_EXPLOSIONS_FREQUENCY = 8; /**< Number of snowball explosions per second. */
 const int SNOW_EXPLOSIONS_COUNT = 5; /**< Number of snowballs per explosion. */
@@ -319,7 +319,7 @@ Capto::be_angry()
 bool
 Capto::collision_squished(GameObject& object)
 {
-  if (m_state != YetiState::JUMP_UP && m_state != YetiState::RUN && m_state != YetiState::BE_ANGRY) {
+  if (m_state != CaptoState::JUMP_UP && m_state != CaptoState::RUN && m_state != CaptoState::BE_ANGRY) {
     return false;
   }
 
@@ -363,7 +363,7 @@ void Capto::take_hit(Player& )
     // this does not reveal secret tilemaps:
     m_layer = Sector::get().get_foremost_opaque_layer() + 1;
     m_state = SQUISHED;
-    m_state_timer.start(YETI_SQUISH_TIME);
+    m_state_timer.start(CAPTO_SQUISH_TIME);
     set_colgroup_active(COLGROUP_MOVING_ONLY_STATIC);
     // sprite->setAction("dead");
   }
