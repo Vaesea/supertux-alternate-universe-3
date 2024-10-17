@@ -60,7 +60,7 @@ SnowBall::get_default_sprite_name() const
 bool
 SnowBall::is_freezable() const
 {
-  return m_type == BUMPKIN || m_type == BSOD;
+  return m_type == NORMAL || m_type == BSOD;
 }
 
 bool

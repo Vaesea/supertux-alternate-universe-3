@@ -80,6 +80,7 @@
 #include "badguy/yeti_stalactite.hpp"
 #include "badguy/zeekling.hpp"
 #include "badguy/tumbleweed.hpp"
+#include "badguy/capto.hpp"
 #include "math/vector.hpp"
 #include "object/ambient_light.hpp"
 #include "object/ambient_sound.hpp"
@@ -177,10 +178,8 @@ GameObjectFactory::init_factories()
   add_factory<AngryStone>("angrystone");
   add_factory<BouncingSnowball>("bouncingsnowball", OBJ_PARAM_DISPENSABLE);
   add_factory<CaptainSnowball>("captainsnowball", OBJ_PARAM_DISPENSABLE);
-  add_type_factory<CorruptedGranito>("skullyhop", CorruptedGranito::SKULLYHOP); // Backward compatibility
   add_factory<CorruptedGranito>("corrupted_granito", OBJ_PARAM_DISPENSABLE);
   add_factory<CorruptedGranitoBig>("corrupted_granito_big", OBJ_PARAM_DISPENSABLE);
-  add_factory<Crusher>("icecrusher"); // Backward compatibility
   add_factory<Crusher>("crusher");
   add_factory<Crystallo>("crystallo", OBJ_PARAM_DISPENSABLE);
   add_factory<Dart>("dart", OBJ_PARAM_DISPENSABLE);
@@ -189,12 +188,10 @@ GameObjectFactory::init_factories()
   add_factory<DiveMine>("dive-mine", OBJ_PARAM_DISPENSABLE);
   add_factory<FishChasing>("fish-chasing", OBJ_PARAM_DISPENSABLE);
   add_factory<FishHarmless>("fish-harmless", OBJ_PARAM_DISPENSABLE);
-  add_factory<FishJumping>("fish"); // Backward compatibility
   add_factory<FishJumping>("fish-jumping", OBJ_PARAM_DISPENSABLE);
   add_factory<FishSwimming>("fish-swimming", OBJ_PARAM_DISPENSABLE);
   add_factory<Flame>("flame", OBJ_PARAM_DISPENSABLE);
   add_factory<FlyingSnowBall>("flyingsnowball", OBJ_PARAM_DISPENSABLE);
-  add_type_factory<Flame>("ghostflame", Flame::GHOST); // Backward compatibility.
   add_factory<GhostTree>("ghosttree");
   add_factory<Ghoul>("ghoul", OBJ_PARAM_DISPENSABLE);
   add_factory<GoldBomb>("goldbomb", OBJ_PARAM_PORTABLE | OBJ_PARAM_DISPENSABLE);
@@ -202,7 +199,6 @@ GameObjectFactory::init_factories()
   add_factory<GranitoBig>("granito_big", OBJ_PARAM_DISPENSABLE);
   add_factory<GranitoGiant>("granito_giant", OBJ_PARAM_DISPENSABLE);
   add_factory<Haywire>("haywire", OBJ_PARAM_DISPENSABLE);
-  add_type_factory<Flame>("iceflame", Flame::ICE); // Backward compatibility.
   add_factory<Igel>("igel", OBJ_PARAM_DISPENSABLE);
   add_factory<Ispy>("ispy");
   add_factory<Jumpy>("jumpy", OBJ_PARAM_DISPENSABLE);
@@ -234,11 +230,9 @@ GameObjectFactory::init_factories()
   add_factory<Spiky>("spiky", OBJ_PARAM_DISPENSABLE);
   add_factory<Stalactite>("stalactite", OBJ_PARAM_DISPENSABLE);
   add_factory<Stumpy>("stumpy", OBJ_PARAM_DISPENSABLE);
-  add_factory<Tarantula>("spidermite"); // Backward compatibilty.
   add_factory<Tarantula>("tarantula", OBJ_PARAM_DISPENSABLE);
   add_factory<Toad>("toad", OBJ_PARAM_DISPENSABLE);
   add_factory<Totem>("totem", OBJ_PARAM_DISPENSABLE);
-  add_factory<ViciousIvy>("poisonivy"); // Backward compatibilty.
   add_factory<ViciousIvy>("viciousivy", OBJ_PARAM_DISPENSABLE);
   add_factory<WalkingCandle>("walking_candle", OBJ_PARAM_DISPENSABLE);
   add_factory<WalkingLeaf>("walkingleaf", OBJ_PARAM_DISPENSABLE);
@@ -247,11 +241,11 @@ GameObjectFactory::init_factories()
   add_factory<YetiStalactite>("yeti_stalactite");
   add_factory<Zeekling>("zeekling", OBJ_PARAM_DISPENSABLE);
   add_factory<Tumbleweed>("tumbleweed", OBJ_PARAM_DISPENSABLE);
+  add_factory<Capto>("capto");
   m_adding_badguys = false;
 
   // Other objects.
   add_factory<AmbientLight>("ambient-light");
-  add_factory<AmbientSound>("ambient_sound"); // Backward compatibilty.
   add_factory<AmbientSound>("ambient-sound");
   add_factory<Background>("background", OBJ_PARAM_WORLDMAP);
   add_factory<BigSnowball>("bigsnowball", OBJ_PARAM_DISPENSABLE);
@@ -295,7 +289,6 @@ GameObjectFactory::init_factories()
   add_factory<RubLight>("rublight", OBJ_PARAM_DISPENSABLE);
   add_factory<ScriptedObject>("scriptedobject");
   add_factory<Shard>("shard", OBJ_PARAM_DISPENSABLE);
-  add_type_factory<UnstableTile>("skull_tile", UnstableTile::DELAYED); // Backward compatibility.
   add_factory<SoundObject>("sound-object");
   add_factory<SnowParticleSystem>("particles-snow");
   add_factory<Spotlight>("spotlight");

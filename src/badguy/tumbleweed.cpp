@@ -114,7 +114,7 @@ Tumbleweed::get_default_sprite_name() const
 bool
 Tumbleweed::is_freezable() const
 {
-  return m_type == FATBAT;
+  return m_type == NORMAL;
 }
 
 bool
