@@ -136,6 +136,14 @@
     (icon "images/creatures/tumbleweed/tumbleweed0.png"))
  )
 
+  (objectgroup
+  (name ( _"Capto Bosses"))
+  (worldmap #f)
+  (object
+    (class "capto")
+    (icon "images/creatures/capto/captain_left-1.png"))
+ )
+
  (objectgroup
   (name (_"Projectiles"))
   (worldmap #f)
