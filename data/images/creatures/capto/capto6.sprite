@@ -1,0 +1,86 @@
+(supertux-sprite
+  (action
+    (name "walking-right")
+    (hitbox 8 13 32 32)
+    (fps 12)
+    (images
+      "captain_right-0.png"
+      "captain_right-1.png"
+      "captain_right-2.png"
+      "captain_right-3.png"
+      "captain_right-4.png"
+      "captain_right-5.png"
+      "captain_right-6.png"
+      "captain_right-7.png")
+  )
+
+  (action
+    (name "walking-left")
+    (hitbox 8 13 32 32)
+    (fps 12)
+    (images
+      "captain_left-0.png"
+      "captain_left-1.png"
+      "captain_left-2.png"
+      "captain_left-3.png"
+      "captain_left-4.png"
+      "captain_left-5.png"
+      "captain_left-6.png"
+      "captain_left-7.png")
+  )
+
+  (action
+    (name "jump-left")
+    (hitbox 8 13 32 32)
+    (fps 20)
+    (images
+      "captain_jump-0.png"
+      "captain_jump-1.png"
+      "captain_jump-2.png"
+      "captain_jump-3.png")
+  )
+
+  (action
+    (name "jump-right")
+    (hitbox 8 13 32 32)
+    (fps 20)
+    (images
+      "captain_jump-4.png"
+      "captain_jump-5.png"
+      "captain_jump-6.png"
+      "captain_jump-7.png")
+  )
+
+  (action
+    (name "stand-left")
+    (hitbox 8 13 32 32)
+    (image
+      "captain_left-2.png"
+    )
+  )
+
+  (action
+    (name "stand-right")
+    (hitbox 8 13 32 32)
+    (image
+      "captain_right-2.png"
+    )
+  )
+
+ (action
+  (name "stomp-left")
+  (image
+    "captain_jump-3.png"
+  )
+  (hitbox 8 13 32 32)
+  )
+
+ (action
+  (name "stomp-right")
+  (image
+    "captain_jump-7.png"
+  )
+  (hitbox 8 13 32 32)
+  )
+
+)
